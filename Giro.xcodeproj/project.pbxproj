@@ -1,0 +1,825 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		412E58F72A77720D00F8355D /* OpenAIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412E58F62A77720D00F8355D /* OpenAIService.swift */; };
+		412E58FE2A7773C500F8355D /* EdenAIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412E58FD2A7773C500F8355D /* EdenAIService.swift */; };
+		412E59002A77740B00F8355D /* OpenAIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412E58FF2A77740B00F8355D /* OpenAIRequest.swift */; };
+		413B06082A6EF1090014A858 /* GiroApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413B06072A6EF1090014A858 /* GiroApp.swift */; };
+		413B060A2A6EF1090014A858 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413B06092A6EF1090014A858 /* ContentView.swift */; };
+		413B060C2A6EF10B0014A858 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 413B060B2A6EF10B0014A858 /* Assets.xcassets */; };
+		413B06192A6EF10B0014A858 /* GiroTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413B06182A6EF10B0014A858 /* GiroTests.swift */; };
+		413B06232A6EF10B0014A858 /* GiroUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413B06222A6EF10B0014A858 /* GiroUITests.swift */; };
+		413B06252A6EF10B0014A858 /* GiroUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413B06242A6EF10B0014A858 /* GiroUITestsLaunchTests.swift */; };
+		413B06322A6EFF110014A858 /* EdenAIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413B06312A6EFF110014A858 /* EdenAIModel.swift */; };
+		413B06382A6F02040014A858 /* Secret.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413B06372A6F02040014A858 /* Secret.swift */; };
+		413B063A2A6F0CD10014A858 /* ImageGeneratorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413B06392A6F0CD10014A858 /* ImageGeneratorViewModel.swift */; };
+		413B063C2A6FA4950014A858 /* MotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413B063B2A6FA4950014A858 /* MotionManager.swift */; };
+		413B063E2A7042BA0014A858 /* ViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413B063D2A7042BA0014A858 /* ViewHelper.swift */; };
+		413B06402A7053780014A858 /* CommandeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413B063F2A7053780014A858 /* CommandeView.swift */; };
+		413B06422A7053AB0014A858 /* FullscreenImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413B06412A7053AB0014A858 /* FullscreenImageView.swift */; };
+		41C1093B2A779CA20085A419 /* SideMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C1093A2A779CA20085A419 /* SideMenuView.swift */; };
+		41C1093E2A77BE9C0085A419 /* ImageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C1093D2A77BE9C0085A419 /* ImageHelper.swift */; };
+		41C109402A77BF250085A419 /* MiddleBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C1093F2A77BF250085A419 /* MiddleBarView.swift */; };
+		41C109422A77CC710085A419 /* KeyboardHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C109412A77CC710085A419 /* KeyboardHelper.swift */; };
+		41C1094A2A77DA920085A419 /* Louis_George_Cafe.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 41C109442A77DA920085A419 /* Louis_George_Cafe.ttf */; };
+		41C1094B2A77DA920085A419 /* Louis_George_Cafe_Bold_Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 41C109452A77DA920085A419 /* Louis_George_Cafe_Bold_Italic.ttf */; };
+		41C1094C2A77DA920085A419 /* Louis_George_Cafe-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 41C109462A77DA920085A419 /* Louis_George_Cafe-Bold.ttf */; };
+		41C1094D2A77DA920085A419 /* Louis_George_Cafe_Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 41C109472A77DA920085A419 /* Louis_George_Cafe_Italic.ttf */; };
+		41C1094E2A77DA920085A419 /* Louis_George_Cafe_Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 41C109482A77DA920085A419 /* Louis_George_Cafe_Light.ttf */; };
+		41C1094F2A77DA920085A419 /* Louis_George_Cafe_Light_Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 41C109492A77DA920085A419 /* Louis_George_Cafe_Light_Italic.ttf */; };
+		41C109522A77DE280085A419 /* FontViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C109512A77DE280085A419 /* FontViewModifier.swift */; };
+		41C109572A79BF4C0085A419 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 41C109562A79BF4C0085A419 /* Alamofire */; };
+		41C1095A2A7B3B900085A419 /* SidePlusMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C109592A7B3B900085A419 /* SidePlusMenuView.swift */; };
+		41C1095C2A7B3BBF0085A419 /* SideMinusMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C1095B2A7B3BBF0085A419 /* SideMinusMenuView.swift */; };
+		41C1095F2A7B4D150085A419 /* HistoryImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C1095E2A7B4D150085A419 /* HistoryImageModel.swift */; };
+		41C109612A7B4DE70085A419 /* HistoryImageStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C109602A7B4DE70085A419 /* HistoryImageStore.swift */; };
+		41CE70242A75B58000C2086C /* StableDiffusionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CE70232A75B58000C2086C /* StableDiffusionModel.swift */; };
+		41CE70262A75C54800C2086C /* SDService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CE70252A75C54800C2086C /* SDService.swift */; };
+		41E2CF822A907E9700EB0BD2 /* HistoryMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E2CF812A907E9700EB0BD2 /* HistoryMenu.swift */; };
+		41E2CF842A907F4600EB0BD2 /* HistoryImageList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E2CF832A907F4600EB0BD2 /* HistoryImageList.swift */; };
+		41E2CF862A907F9D00EB0BD2 /* HistoryImagesCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E2CF852A907F9D00EB0BD2 /* HistoryImagesCard.swift */; };
+		41E2CF882A907FEA00EB0BD2 /* HomeMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E2CF872A907FEA00EB0BD2 /* HomeMenuView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		413B06152A6EF10B0014A858 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 413B05FC2A6EF1090014A858 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 413B06032A6EF1090014A858;
+			remoteInfo = Giro;
+		};
+		413B061F2A6EF10B0014A858 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 413B05FC2A6EF1090014A858 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 413B06032A6EF1090014A858;
+			remoteInfo = Giro;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		412E58F62A77720D00F8355D /* OpenAIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAIService.swift; sourceTree = "<group>"; };
+		412E58FD2A7773C500F8355D /* EdenAIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdenAIService.swift; sourceTree = "<group>"; };
+		412E58FF2A77740B00F8355D /* OpenAIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAIRequest.swift; sourceTree = "<group>"; };
+		413B06042A6EF1090014A858 /* Giro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Giro.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		413B06072A6EF1090014A858 /* GiroApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiroApp.swift; sourceTree = "<group>"; };
+		413B06092A6EF1090014A858 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		413B060B2A6EF10B0014A858 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		413B06142A6EF10B0014A858 /* GiroTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GiroTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		413B06182A6EF10B0014A858 /* GiroTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiroTests.swift; sourceTree = "<group>"; };
+		413B061E2A6EF10B0014A858 /* GiroUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GiroUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		413B06222A6EF10B0014A858 /* GiroUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiroUITests.swift; sourceTree = "<group>"; };
+		413B06242A6EF10B0014A858 /* GiroUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiroUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		413B06312A6EFF110014A858 /* EdenAIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdenAIModel.swift; sourceTree = "<group>"; };
+		413B06372A6F02040014A858 /* Secret.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secret.swift; sourceTree = "<group>"; };
+		413B06392A6F0CD10014A858 /* ImageGeneratorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGeneratorViewModel.swift; sourceTree = "<group>"; };
+		413B063B2A6FA4950014A858 /* MotionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionManager.swift; sourceTree = "<group>"; };
+		413B063D2A7042BA0014A858 /* ViewHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewHelper.swift; sourceTree = "<group>"; };
+		413B063F2A7053780014A858 /* CommandeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandeView.swift; sourceTree = "<group>"; };
+		413B06412A7053AB0014A858 /* FullscreenImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullscreenImageView.swift; sourceTree = "<group>"; };
+		41C1093A2A779CA20085A419 /* SideMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuView.swift; sourceTree = "<group>"; };
+		41C1093D2A77BE9C0085A419 /* ImageHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageHelper.swift; sourceTree = "<group>"; };
+		41C1093F2A77BF250085A419 /* MiddleBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiddleBarView.swift; sourceTree = "<group>"; };
+		41C109412A77CC710085A419 /* KeyboardHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardHelper.swift; sourceTree = "<group>"; };
+		41C109442A77DA920085A419 /* Louis_George_Cafe.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Louis_George_Cafe.ttf; sourceTree = "<group>"; };
+		41C109452A77DA920085A419 /* Louis_George_Cafe_Bold_Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Louis_George_Cafe_Bold_Italic.ttf; sourceTree = "<group>"; };
+		41C109462A77DA920085A419 /* Louis_George_Cafe-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Louis_George_Cafe-Bold.ttf"; sourceTree = "<group>"; };
+		41C109472A77DA920085A419 /* Louis_George_Cafe_Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Louis_George_Cafe_Italic.ttf; sourceTree = "<group>"; };
+		41C109482A77DA920085A419 /* Louis_George_Cafe_Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Louis_George_Cafe_Light.ttf; sourceTree = "<group>"; };
+		41C109492A77DA920085A419 /* Louis_George_Cafe_Light_Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Louis_George_Cafe_Light_Italic.ttf; sourceTree = "<group>"; };
+		41C109502A77DAD60085A419 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		41C109512A77DE280085A419 /* FontViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontViewModifier.swift; sourceTree = "<group>"; };
+		41C109592A7B3B900085A419 /* SidePlusMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidePlusMenuView.swift; sourceTree = "<group>"; };
+		41C1095B2A7B3BBF0085A419 /* SideMinusMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMinusMenuView.swift; sourceTree = "<group>"; };
+		41C1095E2A7B4D150085A419 /* HistoryImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryImageModel.swift; sourceTree = "<group>"; };
+		41C109602A7B4DE70085A419 /* HistoryImageStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryImageStore.swift; sourceTree = "<group>"; };
+		41CE70232A75B58000C2086C /* StableDiffusionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StableDiffusionModel.swift; sourceTree = "<group>"; };
+		41CE70252A75C54800C2086C /* SDService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDService.swift; sourceTree = "<group>"; };
+		41E2CF812A907E9700EB0BD2 /* HistoryMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryMenu.swift; sourceTree = "<group>"; };
+		41E2CF832A907F4600EB0BD2 /* HistoryImageList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryImageList.swift; sourceTree = "<group>"; };
+		41E2CF852A907F9D00EB0BD2 /* HistoryImagesCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryImagesCard.swift; sourceTree = "<group>"; };
+		41E2CF872A907FEA00EB0BD2 /* HomeMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMenuView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		413B06012A6EF1090014A858 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41C109572A79BF4C0085A419 /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		413B06112A6EF10B0014A858 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		413B061B2A6EF10B0014A858 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		412E58F82A77727300F8355D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				41CE70252A75C54800C2086C /* SDService.swift */,
+				412E58F62A77720D00F8355D /* OpenAIService.swift */,
+				412E58FD2A7773C500F8355D /* EdenAIService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		412E58F92A77727F00F8355D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				41CE70232A75B58000C2086C /* StableDiffusionModel.swift */,
+				413B06312A6EFF110014A858 /* EdenAIModel.swift */,
+				412E58FF2A77740B00F8355D /* OpenAIRequest.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		412E58FA2A77729200F8355D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				41C109582A7B3B680085A419 /* SideMenus */,
+				412E58FC2A7772D200F8355D /* VM */,
+				413B06092A6EF1090014A858 /* ContentView.swift */,
+				413B06412A7053AB0014A858 /* FullscreenImageView.swift */,
+				413B063F2A7053780014A858 /* CommandeView.swift */,
+				41C1093F2A77BF250085A419 /* MiddleBarView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		412E58FB2A77729B00F8355D /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		412E58FC2A7772D200F8355D /* VM */ = {
+			isa = PBXGroup;
+			children = (
+				413B06392A6F0CD10014A858 /* ImageGeneratorViewModel.swift */,
+			);
+			path = VM;
+			sourceTree = "<group>";
+		};
+		413B05FB2A6EF1090014A858 = {
+			isa = PBXGroup;
+			children = (
+				413B06062A6EF1090014A858 /* Giro */,
+				413B06172A6EF10B0014A858 /* GiroTests */,
+				413B06212A6EF10B0014A858 /* GiroUITests */,
+				413B06052A6EF1090014A858 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		413B06052A6EF1090014A858 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				413B06042A6EF1090014A858 /* Giro.app */,
+				413B06142A6EF10B0014A858 /* GiroTests.xctest */,
+				413B061E2A6EF10B0014A858 /* GiroUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		413B06062A6EF1090014A858 /* Giro */ = {
+			isa = PBXGroup;
+			children = (
+				41C1095D2A7B4CF50085A419 /* History */,
+				41C109502A77DAD60085A419 /* Info.plist */,
+				41C109432A77DA6C0085A419 /* Font */,
+				41C1093C2A77BE860085A419 /* Helpers */,
+				412E58FB2A77729B00F8355D /* New Group */,
+				412E58FA2A77729200F8355D /* Views */,
+				412E58F92A77727F00F8355D /* Models */,
+				412E58F82A77727300F8355D /* Services */,
+				413B06072A6EF1090014A858 /* GiroApp.swift */,
+				413B060B2A6EF10B0014A858 /* Assets.xcassets */,
+				413B06372A6F02040014A858 /* Secret.swift */,
+				413B063B2A6FA4950014A858 /* MotionManager.swift */,
+			);
+			path = Giro;
+			sourceTree = "<group>";
+		};
+		413B06172A6EF10B0014A858 /* GiroTests */ = {
+			isa = PBXGroup;
+			children = (
+				413B06182A6EF10B0014A858 /* GiroTests.swift */,
+			);
+			path = GiroTests;
+			sourceTree = "<group>";
+		};
+		413B06212A6EF10B0014A858 /* GiroUITests */ = {
+			isa = PBXGroup;
+			children = (
+				413B06222A6EF10B0014A858 /* GiroUITests.swift */,
+				413B06242A6EF10B0014A858 /* GiroUITestsLaunchTests.swift */,
+			);
+			path = GiroUITests;
+			sourceTree = "<group>";
+		};
+		41C1093C2A77BE860085A419 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				413B063D2A7042BA0014A858 /* ViewHelper.swift */,
+				41C1093D2A77BE9C0085A419 /* ImageHelper.swift */,
+				41C109412A77CC710085A419 /* KeyboardHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		41C109432A77DA6C0085A419 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				41C109452A77DA920085A419 /* Louis_George_Cafe_Bold_Italic.ttf */,
+				41C109462A77DA920085A419 /* Louis_George_Cafe-Bold.ttf */,
+				41C109472A77DA920085A419 /* Louis_George_Cafe_Italic.ttf */,
+				41C109492A77DA920085A419 /* Louis_George_Cafe_Light_Italic.ttf */,
+				41C109482A77DA920085A419 /* Louis_George_Cafe_Light.ttf */,
+				41C109442A77DA920085A419 /* Louis_George_Cafe.ttf */,
+				41C109512A77DE280085A419 /* FontViewModifier.swift */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		41C109582A7B3B680085A419 /* SideMenus */ = {
+			isa = PBXGroup;
+			children = (
+				41E2CF802A907E6B00EB0BD2 /* PlusMenu */,
+				41E2CF7F2A907E5E00EB0BD2 /* MinusMenu */,
+				41C1093A2A779CA20085A419 /* SideMenuView.swift */,
+			);
+			path = SideMenus;
+			sourceTree = "<group>";
+		};
+		41C1095D2A7B4CF50085A419 /* History */ = {
+			isa = PBXGroup;
+			children = (
+				41C1095E2A7B4D150085A419 /* HistoryImageModel.swift */,
+				41C109602A7B4DE70085A419 /* HistoryImageStore.swift */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
+		41E2CF7E2A907E2F00EB0BD2 /* History */ = {
+			isa = PBXGroup;
+			children = (
+				41E2CF812A907E9700EB0BD2 /* HistoryMenu.swift */,
+				41E2CF832A907F4600EB0BD2 /* HistoryImageList.swift */,
+				41E2CF852A907F9D00EB0BD2 /* HistoryImagesCard.swift */,
+				41E2CF872A907FEA00EB0BD2 /* HomeMenuView.swift */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
+		41E2CF7F2A907E5E00EB0BD2 /* MinusMenu */ = {
+			isa = PBXGroup;
+			children = (
+				41E2CF7E2A907E2F00EB0BD2 /* History */,
+				41C1095B2A7B3BBF0085A419 /* SideMinusMenuView.swift */,
+			);
+			path = MinusMenu;
+			sourceTree = "<group>";
+		};
+		41E2CF802A907E6B00EB0BD2 /* PlusMenu */ = {
+			isa = PBXGroup;
+			children = (
+				41C109592A7B3B900085A419 /* SidePlusMenuView.swift */,
+			);
+			path = PlusMenu;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		413B06032A6EF1090014A858 /* Giro */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 413B06282A6EF10B0014A858 /* Build configuration list for PBXNativeTarget "Giro" */;
+			buildPhases = (
+				413B06002A6EF1090014A858 /* Sources */,
+				413B06012A6EF1090014A858 /* Frameworks */,
+				413B06022A6EF1090014A858 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Giro;
+			packageProductDependencies = (
+				41C109562A79BF4C0085A419 /* Alamofire */,
+			);
+			productName = Giro;
+			productReference = 413B06042A6EF1090014A858 /* Giro.app */;
+			productType = "com.apple.product-type.application";
+		};
+		413B06132A6EF10B0014A858 /* GiroTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 413B062B2A6EF10B0014A858 /* Build configuration list for PBXNativeTarget "GiroTests" */;
+			buildPhases = (
+				413B06102A6EF10B0014A858 /* Sources */,
+				413B06112A6EF10B0014A858 /* Frameworks */,
+				413B06122A6EF10B0014A858 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				413B06162A6EF10B0014A858 /* PBXTargetDependency */,
+			);
+			name = GiroTests;
+			productName = GiroTests;
+			productReference = 413B06142A6EF10B0014A858 /* GiroTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		413B061D2A6EF10B0014A858 /* GiroUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 413B062E2A6EF10B0014A858 /* Build configuration list for PBXNativeTarget "GiroUITests" */;
+			buildPhases = (
+				413B061A2A6EF10B0014A858 /* Sources */,
+				413B061B2A6EF10B0014A858 /* Frameworks */,
+				413B061C2A6EF10B0014A858 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				413B06202A6EF10B0014A858 /* PBXTargetDependency */,
+			);
+			name = GiroUITests;
+			productName = GiroUITests;
+			productReference = 413B061E2A6EF10B0014A858 /* GiroUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		413B05FC2A6EF1090014A858 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					413B06032A6EF1090014A858 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					413B06132A6EF10B0014A858 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 413B06032A6EF1090014A858;
+					};
+					413B061D2A6EF10B0014A858 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 413B06032A6EF1090014A858;
+					};
+				};
+			};
+			buildConfigurationList = 413B05FF2A6EF1090014A858 /* Build configuration list for PBXProject "Giro" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 413B05FB2A6EF1090014A858;
+			packageReferences = (
+				41C109552A79BF4C0085A419 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
+			productRefGroup = 413B06052A6EF1090014A858 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				413B06032A6EF1090014A858 /* Giro */,
+				413B06132A6EF10B0014A858 /* GiroTests */,
+				413B061D2A6EF10B0014A858 /* GiroUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		413B06022A6EF1090014A858 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				413B060C2A6EF10B0014A858 /* Assets.xcassets in Resources */,
+				41C1094F2A77DA920085A419 /* Louis_George_Cafe_Light_Italic.ttf in Resources */,
+				41C1094D2A77DA920085A419 /* Louis_George_Cafe_Italic.ttf in Resources */,
+				41C1094A2A77DA920085A419 /* Louis_George_Cafe.ttf in Resources */,
+				41C1094E2A77DA920085A419 /* Louis_George_Cafe_Light.ttf in Resources */,
+				41C1094B2A77DA920085A419 /* Louis_George_Cafe_Bold_Italic.ttf in Resources */,
+				41C1094C2A77DA920085A419 /* Louis_George_Cafe-Bold.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		413B06122A6EF10B0014A858 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		413B061C2A6EF10B0014A858 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		413B06002A6EF1090014A858 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				413B06382A6F02040014A858 /* Secret.swift in Sources */,
+				41E2CF822A907E9700EB0BD2 /* HistoryMenu.swift in Sources */,
+				41E2CF882A907FEA00EB0BD2 /* HomeMenuView.swift in Sources */,
+				413B063C2A6FA4950014A858 /* MotionManager.swift in Sources */,
+				41C109612A7B4DE70085A419 /* HistoryImageStore.swift in Sources */,
+				413B06322A6EFF110014A858 /* EdenAIModel.swift in Sources */,
+				412E58FE2A7773C500F8355D /* EdenAIService.swift in Sources */,
+				41E2CF862A907F9D00EB0BD2 /* HistoryImagesCard.swift in Sources */,
+				413B060A2A6EF1090014A858 /* ContentView.swift in Sources */,
+				41C109402A77BF250085A419 /* MiddleBarView.swift in Sources */,
+				41C1095A2A7B3B900085A419 /* SidePlusMenuView.swift in Sources */,
+				41C109422A77CC710085A419 /* KeyboardHelper.swift in Sources */,
+				41C1095F2A7B4D150085A419 /* HistoryImageModel.swift in Sources */,
+				413B06422A7053AB0014A858 /* FullscreenImageView.swift in Sources */,
+				41CE70262A75C54800C2086C /* SDService.swift in Sources */,
+				41C1095C2A7B3BBF0085A419 /* SideMinusMenuView.swift in Sources */,
+				413B06402A7053780014A858 /* CommandeView.swift in Sources */,
+				41C109522A77DE280085A419 /* FontViewModifier.swift in Sources */,
+				41CE70242A75B58000C2086C /* StableDiffusionModel.swift in Sources */,
+				412E59002A77740B00F8355D /* OpenAIRequest.swift in Sources */,
+				413B06082A6EF1090014A858 /* GiroApp.swift in Sources */,
+				41E2CF842A907F4600EB0BD2 /* HistoryImageList.swift in Sources */,
+				413B063A2A6F0CD10014A858 /* ImageGeneratorViewModel.swift in Sources */,
+				41C1093B2A779CA20085A419 /* SideMenuView.swift in Sources */,
+				413B063E2A7042BA0014A858 /* ViewHelper.swift in Sources */,
+				412E58F72A77720D00F8355D /* OpenAIService.swift in Sources */,
+				41C1093E2A77BE9C0085A419 /* ImageHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		413B06102A6EF10B0014A858 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				413B06192A6EF10B0014A858 /* GiroTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		413B061A2A6EF10B0014A858 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				413B06232A6EF10B0014A858 /* GiroUITests.swift in Sources */,
+				413B06252A6EF10B0014A858 /* GiroUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		413B06162A6EF10B0014A858 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 413B06032A6EF1090014A858 /* Giro */;
+			targetProxy = 413B06152A6EF10B0014A858 /* PBXContainerItemProxy */;
+		};
+		413B06202A6EF10B0014A858 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 413B06032A6EF1090014A858 /* Giro */;
+			targetProxy = 413B061F2A6EF10B0014A858 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		413B06262A6EF10B0014A858 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		413B06272A6EF10B0014A858 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		413B06292A6EF10B0014A858 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Giro/Preview Content\"";
+				DEVELOPMENT_TEAM = MXAXTSQ4TN;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Giro/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Allow AIGenerator to save pictures in your library";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = SamuelNeveu.Giro;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		413B062A2A6EF10B0014A858 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Giro/Preview Content\"";
+				DEVELOPMENT_TEAM = MXAXTSQ4TN;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Giro/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Allow AIGenerator to save pictures in your library";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = SamuelNeveu.Giro;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		413B062C2A6EF10B0014A858 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = SamuelNeveu.GiroTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Giro.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Giro";
+			};
+			name = Debug;
+		};
+		413B062D2A6EF10B0014A858 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = SamuelNeveu.GiroTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Giro.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Giro";
+			};
+			name = Release;
+		};
+		413B062F2A6EF10B0014A858 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = SamuelNeveu.GiroUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Giro;
+			};
+			name = Debug;
+		};
+		413B06302A6EF10B0014A858 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = SamuelNeveu.GiroUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Giro;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		413B05FF2A6EF1090014A858 /* Build configuration list for PBXProject "Giro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				413B06262A6EF10B0014A858 /* Debug */,
+				413B06272A6EF10B0014A858 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		413B06282A6EF10B0014A858 /* Build configuration list for PBXNativeTarget "Giro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				413B06292A6EF10B0014A858 /* Debug */,
+				413B062A2A6EF10B0014A858 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		413B062B2A6EF10B0014A858 /* Build configuration list for PBXNativeTarget "GiroTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				413B062C2A6EF10B0014A858 /* Debug */,
+				413B062D2A6EF10B0014A858 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		413B062E2A6EF10B0014A858 /* Build configuration list for PBXNativeTarget "GiroUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				413B062F2A6EF10B0014A858 /* Debug */,
+				413B06302A6EF10B0014A858 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		41C109552A79BF4C0085A419 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		41C109562A79BF4C0085A419 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 41C109552A79BF4C0085A419 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 413B05FC2A6EF1090014A858 /* Project object */;
+}
